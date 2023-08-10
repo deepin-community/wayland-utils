@@ -1,0 +1,2 @@
+version=4
+https://gitlab.freedesktop.org/wayland/wayland-utils/tags .*/wayland-utils-(\d\S+)\.tar\.gz

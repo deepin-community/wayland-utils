@@ -1,5 +1,13 @@
-template-repository (1.0-1) unstable; urgency=medium
+wayland-utils (1.2.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream release v1.2.0
+  * debian/control: Use my debian email
+  * debian/control: Bump standard-version
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Marius Gripsgard <mariogrip@debian.org>  Wed, 26 Jul 2023 01:48:57 +0200
+
+wayland-utils (1.1.0-1) unstable; urgency=medium
+
+  * Initial release. Closes: #1029407
+
+ -- Marius Gripsgard <marius@ubports.com>  Tue, 24 Jan 2023 16:43:38 +0100
