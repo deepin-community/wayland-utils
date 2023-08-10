@@ -1,0 +1,50 @@
+.TH WAYLAND-INFO 1 "2020-07-08" "@version@"
+.SH NAME
+wayland-info \- display information utility for Wayland
+.SH SYNOPSIS
+.B wayland-info
+[option ...]
+.
+.\" ***************************************************************
+.SH DESCRIPTION
+
+.B wayland-info
+is a utility for displaying information about the Wayland protocols supported
+by a Wayland compositor.
+
+It can be used to check which Wayland protocols and versions are
+advertised by the Wayland compositor.
+
+.B wayland-info
+also provides additional information for a subset of Wayland protocols it
+knows about, namely Linux DMABUF, presentation time, tablet and XDG output
+protocols.
+.
+.\" ***************************************************************
+.SH OPTIONS
+.
+.B wayland-info
+accepts the following line options:
+.TP 8
+.B \-h, \-\-help
+Print a summary of command line options, and quit.
+.TP 8
+.B \-i, \-\-interface \fIinterface\fR
+Only print information about the Wayland globals containing the string
+\fIinterface\fR in their name.
+.
+.\" ***************************************************************
+.SH ENVIRONMENT
+.
+.TP
+.B WAYLAND_DISPLAY
+The name of the display (socket) of an already running Wayland server, without
+the path. The directory path is always taken from
+.BR XDG_RUNTIME_DIR .
+If
+.B WAYLAND_DISPLAY
+is not set, the socket name is "wayland-0".
+.
+.\" ***************************************************************
+.SH "SEE ALSO"
+.BR weston (1)
